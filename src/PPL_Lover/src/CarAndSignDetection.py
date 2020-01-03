@@ -163,6 +163,6 @@ if __name__=='__main__':
                 #     cv2.imwrite('/home/tl/Pictures/'+str(i)+'.png',image_copy[y:y+h,x:x+w])
                 #     i+=1
 
-                cv2.imshow("image", image)
-                cv2.waitKey(1)
+                # cv2.imshow("image", image)
+                # cv2.waitKey(1)
                 #print "--- frame ---" +str(1/(time.time() - start_time))

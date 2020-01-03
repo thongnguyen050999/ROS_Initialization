@@ -67,9 +67,9 @@ def rgb_image_callback(img_msg):
             pt3=tuple(np.asarray((intersec_x,intersec_y),dtype=np.int))
             cv2.line(image,pt1,pt3,(0, 255, 0),2)
             cv2.line(image,pt2,pt3,(0, 255, 0),2)
-            cv2.imshow('Frame', image)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                return
+            # cv2.imshow('Frame', image)
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+                # return
             out.write(image)
         print str(cte)
         ang_pub.publish(cte)

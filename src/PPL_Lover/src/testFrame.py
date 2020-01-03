@@ -86,6 +86,6 @@ while (cap.isOpened()):
     pt3 = tuple(np.asarray((intersec_x, intersec_y), dtype=np.int))
     cv2.line(image, pt1, pt3, (0, 255, 0), 2)
     cv2.line(image, pt2, pt3, (0, 255, 0), 2)
-    cv2.imshow('Frame', image)
-    cv2.waitKey(1)
+    # cv2.imshow('Frame', image)
+    # cv2.waitKey(1)
     print "--- frame ---" + str(1 / (time.time() - start_time))
